@@ -24,3 +24,17 @@
 body {
   background-color: honeydew;
 }
+
+#col-1 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+
+#col-2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  float: right;
+}

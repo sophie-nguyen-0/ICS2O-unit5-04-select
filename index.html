@@ -44,7 +44,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <title>xxx</title>
+    <title>hi</title>
   </head>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
@@ -55,29 +55,50 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title">hi</span>
           <div class="mdl-layout-spacer"></div>
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
-            <a class="mdl-navigation__link" href="">xxx</a>
-          </nav>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <p></p>
-        <img
-          src="./images/notebook-animation.svg"
-          alt="computer"
-          width="25%"
-          height="25%"
-        />
-        <div class="page-content">xxx</div>
+        <div id="col-1">
+          <h2>Discount or No?</h2>
+          <br>
+          <label>
+          <h5>choose the day you will be going:</h5>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="day" name="day">
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+            </select>
+            <label class="mdl-textfield__label" for="day">day</label>
+          </div>
+        </label>
+        <br>
+          <h5>how old are you?</h5>
+          <!-- Numeric Textfield with Floating Label -->
+          <form action="#">
+            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+              <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+              <label class="mdl-textfield__label" for="sample4">age...</label>
+              <span class="mdl-textfield__error">Input is not a number!</span>
+            </div>
+          </form>
+          <br>
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="myButtonClicked()"
         >
-          xxx
+          button
         </button>
-        <!--basic text-->
-        <p></p>
         <div id="hello-world"></div>
+        </div>
+        <div id="col-2">
+          <img src="./images/umaru.jpg" alt="umaru">
+        </div>
+      
       </main>
     </div>
   </body>
