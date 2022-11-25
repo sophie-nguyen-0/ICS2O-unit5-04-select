@@ -20,13 +20,9 @@ function myButtonClicked() {
   const age = parseInt(document.getElementById("age").value)
   const day = string(document.getElementById("day").value)
 
-  if ((day == "thursday" || day == "tuesday") || (age > 12 && age < 21)) {
-    
-    document.getElementById("answer").innerHTML =
-      "You can get a discount!"
-  }
-  else{
-    document.getElementById("answer").innerHTML =
-      "You can't get a discount"
+  if (day == "thursday" || day == "tuesday" || (age > 12 && age < 21)) {
+    document.getElementById("answer").innerHTML = "You can get a discount!"
+  } else {
+    document.getElementById("answer").innerHTML = "You can't get a discount"
   }
 }
