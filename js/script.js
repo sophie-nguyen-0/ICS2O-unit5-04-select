@@ -18,7 +18,7 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked() {
   const age = parseInt(document.getElementById("age").value)
-  var day = String(document.getElementById("day").value)
+  const day = String(document.getElementById("day").value)
 
   if (day == "thursday" || day == "tuesday" || (age > 12 && age < 21)) {
     document.getElementById("answer").innerHTML = "You can get a discount!"
